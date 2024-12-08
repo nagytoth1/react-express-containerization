@@ -18,7 +18,7 @@ FROM node:16.18-alpine3.16
 WORKDIR /app
 # this is the backend stage (and the stage hosting frontend & backend )
 # apk update might be needed
-RUN apk add nginx
+RUN apk add --no-cache nginx
 # add custom Nginx configuration if needed
 COPY nginx.conf /etc/nginx/http.d/default.conf
 COPY backend/package.json .
