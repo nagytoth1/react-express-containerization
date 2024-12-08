@@ -1,8 +1,5 @@
-# React + Vite
+Build image with docker compose build -> react-context-example-app image will be created
+Then you can run slim build react-context-example-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+About installing slim you can read here: [link](https://github.com/slimtoolkit/slim?tab=readme-ov-file#installation)
+That's it, you can use the slim image (92.7 MB size instead of 120 MB)

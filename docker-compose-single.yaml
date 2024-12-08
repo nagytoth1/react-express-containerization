@@ -1,5 +1,6 @@
 services:
   app:
+    # image: react-context-example-app.slim
     build: .
     environment:
       - PORT=3001
