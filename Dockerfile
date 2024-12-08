@@ -25,8 +25,7 @@ COPY backend/package.json .
 # install backend dependencies & clear cache and package files
 RUN npm install --omit=dev && \
     npm cache clean --force && \
-    rm -rf /root/.npm && \
-    rm package.json package-lock.json
+    rm -rf /root/.npm
 COPY --from=builder /app/dist /usr/share/nginx/html
 
 COPY backend/ ./
